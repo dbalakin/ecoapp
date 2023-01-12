@@ -1,0 +1,317 @@
+{
+  "displayFieldName": "",
+  "fieldAliases": {
+    "OBJECTID": "OBJECTID",
+    "source": "source"
+  },
+  "geometryType": "esriGeometryPoint",
+  "spatialReference": {
+    "wkid": 32637,
+    "latestWkid": 32637
+  },
+  "fields": [
+    {
+      "name": "OBJECTID",
+      "type": "esriFieldTypeOID",
+      "alias": "OBJECTID"
+    },
+    {
+      "name": "source",
+      "type": "esriFieldTypeString",
+      "alias": "source",
+      "length": 50
+    }
+  ],
+  "features": [
+    {
+      "attributes": {
+        "OBJECTID": 1,
+        "source": "Supermarket"
+      },
+      "geometry": {
+        "x": 55.862561364333246,
+        "y": 37.357035464966266
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 3,
+        "source": "Supermarket"
+      },
+      "geometry": {
+        "x": 55.84215996032547,
+        "y": 37.35341686528809
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 4,
+        "source": "Supermarket"
+      },
+      "geometry": {
+        "x": 55.83447977955101,
+        "y": 37.34808007616301
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 5,
+        "source": "Supermarket"
+      },
+      "geometry": {
+        "x": 55.831838678280654,
+        "y": 37.353261615281156
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 6,
+        "source": "Supermarket"
+      },
+      "geometry": {
+        "x": 55.85144443796827,
+        "y": 37.390219623325635
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 7,
+        "source": "Supermarket"
+      },
+      "geometry": {
+        "x": 55.853877983915375,
+        "y": 37.409140458234184
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 8,
+        "source": "Supermarket"
+      },
+      "geometry": {
+        "x": 55.83071597461521,
+        "y": 37.37612138623266
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 9,
+        "source": "Supermarket"
+      },
+      "geometry": {
+        "x": 55.825560578084584,
+        "y": 37.35318898110735
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 10,
+        "source": "Supermarket"
+      },
+      "geometry": {
+        "x": 55.826627644337705,
+        "y": 37.3547490370866
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 11,
+        "source": "Supermarket"
+      },
+      "geometry": {
+        "x": 55.822582186946605,
+        "y": 37.354497439293404
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 12,
+        "source": "Supermarket"
+      },
+      "geometry": {
+        "x": 55.8241161768987,
+        "y": 37.36254235872615
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 13,
+        "source": "Supermarket"
+      },
+      "geometry": {
+        "x": 55.83125281043598,
+        "y": 37.38801224162064
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 14,
+        "source": "Supermarket"
+      },
+      "geometry": {
+        "x": 55.830082142701706,
+        "y": 37.407661932568985
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 15,
+        "source": "Supermarket"
+      },
+      "geometry": {
+        "x": 55.82573782746866,
+        "y": 37.42110256230915
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 16,
+        "source": "Supermarket"
+      },
+      "geometry": {
+        "x": 55.841441469357456,
+        "y": 37.4368614585333
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 17,
+        "source": "Supermarket"
+      },
+      "geometry": {
+        "x": 55.81002051436495,
+        "y": 37.464214343370436
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 18,
+        "source": "Supermarket"
+      },
+      "geometry": {
+        "x": 55.79979747686218,
+        "y": 37.483442802617
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 19,
+        "source": "Supermarket"
+      },
+      "geometry": {
+        "x": 55.7740769596266,
+        "y": 37.50722053642351
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 20,
+        "source": "Supermarket"
+      },
+      "geometry": {
+        "x": 55.80069427195061,
+        "y": 37.396704599013184
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 21,
+        "source": "Supermarket"
+      },
+      "geometry": {
+        "x": 55.80665095203646,
+        "y": 37.3867494201442
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 22,
+        "source": "Supermarket"
+      },
+      "geometry": {
+        "x": 55.80903842550133,
+        "y": 37.3874950843641
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 24,
+        "source": "repairing"
+      },
+      "geometry": {
+        "x": 55.85698265215827,
+        "y": 37.35630962888838
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 25,
+        "source": "repairing"
+      },
+      "geometry": {
+        "x": 55.83687264041296,
+        "y": 37.439227480020826
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 26,
+        "source": "repairing"
+      },
+      "geometry": {
+        "x": 55.835898395744984,
+        "y": 37.45244852640446
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 27,
+        "source": "repairing"
+      },
+      "geometry": {
+        "x": 55.81939080005589,
+        "y": 37.43837896689646
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 28,
+        "source": "repairing"
+      },
+      "geometry": {
+        "x": 55.75120158713735,
+        "y": 37.45373955447322
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 29,
+        "source": "repairing"
+      },
+      "geometry": {
+        "x": 55.76455466449364,
+        "y": 37.46893303175299
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 30,
+        "source": "repairing"
+      },
+      "geometry": {
+        "x": 55.812123124162184,
+        "y": 37.48423131581771
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 31,
+        "source": "depo"
+      },
+      "geometry": {
+        "x": 55.826755298183905,
+        "y": 37.44049635944033
+      }
+    }
+  ]
+}

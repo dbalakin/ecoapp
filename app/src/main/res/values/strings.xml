@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">EcoApp</string>
+    <string name="title_activity_maps">EcoApp</string>
+    <string name="search">Поиск</string>
+    <string name="blog">Блог</string>
+    <string name="favorite">Избранное</string>
+    <string name="address">Введите адрес</string>
+    <string name="blogTitle">Экспертный\n блог</string>
+    <string name="app_label">Search</string>
+    <string name="search_hint">Enter</string>
+    <string name="pollution">загрязнение</string>
+    <string name="expertOpinion">Экспертное заключение</string>
+    <string name="ask">Узнать мнение экспертов</string>
+    <string name="fav_address">Адрес</string>
+    <string name="fav_place">Город, индекс</string>
+    <string name="mapbox_access_token">pk.eyJ1Ijoidjh0ZW5rbyIsImEiOiJja2Z5Nzc5OTcxcmhsMnd0ODQwYnZzY2hiIn0.CI9BJ6w8Lg54EXpMZ3qchA</string>
+    <string name="choose_time">Выберите время:</string>
+    <string name="time1">6:00</string>
+    <string name="time2">19:00</string>
+    <string name="search_enter">Введите адрес</string>
+    <string name="google_maps_key">AIzaSyC01Mtc9hUhJNnJjturwqIQEFtDZJRvur4</string>
+
+    <string-array name="indicator_colors1">
+        <item name="indicator_green1">#c8ed11</item>
+        <item name="indicator_green2">#9ed20e</item>
+        <item name="indicator_green3">#74b60a</item>
+        <item name="indicator_green4">#1b7b00</item>
+        <item name="indicator_green5">#4a9a05</item>
+    </string-array>
+</resources>

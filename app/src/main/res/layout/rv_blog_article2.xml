@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="230dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="25dp"
+    app:cardElevation="5dp"
+    android:translationZ="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/articlePhotoView_rvBlog"
+            android:layout_width="@dimen/articlePhotoSize"
+            android:layout_height="@dimen/articlePhotoSize"
+            android:background="@drawable/circle_background_article"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="-20dp"
+            android:layout_marginTop="-190dp"/>
+
+        <TextView
+            android:id="@+id/articleDate_rvBlog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="32dp"
+            android:textSize="16sp"
+            tools:text="29.09.2020" />
+
+        <ImageView
+            android:id="@+id/articlePhoto_rvBlog"
+            android:layout_width="@dimen/articlePhotoSize"
+            android:layout_height="@dimen/articlePhotoSize"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="-50dp"
+            android:layout_marginStart="-30dp"
+            android:background="@drawable/circle_background_article"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white_transparent_second"/>
+
+        <RelativeLayout
+            android:id="@+id/transparentClickableItem_rvBlog"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_alignParentBottom="true"
+            android:focusable="true"
+            android:clickable="true"
+            android:background="?attr/selectableItemBackground">
+
+            <TextView
+                android:id="@+id/articleTitle_rvBlog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@id/articleArrow_rvBlog"
+                android:layout_margin="8dp"
+                android:gravity="start"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                    android:maxLines="2"
+                    tools:lines="2"
+                tools:text="Свопы растений в Москве"/>
+
+            <TextView
+                android:id="@+id/articleAuthor_rvBlog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/articleTitle_rvBlog"
+                android:layout_margin="8dp"
+                android:textSize="16sp"
+                    android:maxLines="2"
+                    tools:lines="2"
+                tools:text="Автор: Мария Марьевна"/>
+
+            <ImageView
+                android:id="@+id/articleArrow_rvBlog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="8dp"
+                app:srcCompat="@drawable/ic_right_arrow"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

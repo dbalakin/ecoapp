@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="articlePhotoSize">220dp</dimen>
+    <dimen name="rad">15dp</dimen>
+    <dimen name="nerad">3dp</dimen>
+    <dimen name="rad_dop">8dp</dimen>
+</resources>

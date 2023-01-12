@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/pollutionPhoto_expertOpinion"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/experts_circle"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-50dp"
+        android:layout_marginTop="-50dp"/>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollView_expertOpinion"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:scrollbars="none"
+        android:overScrollMode="never">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardExpertOpinion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            app:cardBackgroundColor="@color/white_transparent_second"
+            app:cardCornerRadius="25dp"
+            android:translationZ="10dp"
+            app:cardUseCompatPadding="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white_transparent_second"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:id="@+id/clickableItem_expertOpinion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:clickable="true"
+                    android:background="?attr/selectableItemBackground">
+
+                    <ImageView
+                        android:id="@+id/arrow_expertOpinion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="16dp"
+                        app:srcCompat="@drawable/ic_left_arrow"/>
+
+                    <TextView
+                        android:id="@+id/title_expertOpinion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_toEndOf="@id/arrow_expertOpinion"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:textSize="28sp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:gravity="end"
+                        android:text="@string/expertOpinion"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/conclusion_expertOpinion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginStart="16dp"
+                    android:textSize="20sp"
+                    android:background="@android:color/transparent"
+                    tools:text="Эксперты пришли к заключению, что..."/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvExpertOpinion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    android:orientation="horizontal"
+                    tools:listitem="@layout/rv_pollution"/>
+
+                <TextView
+                    android:id="@+id/description_expertOpinion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    tools:text="Описание"
+                    android:background="@android:color/transparent" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

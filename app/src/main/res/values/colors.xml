@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="photoColor1">#3190CB</color>
+    <color name="photoColor2">#74DA96</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white_transparent">#50FFFFFF</color>
+    <color name="white_transparent_second">#B0FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="red">#D50000</color>
+    <color name="checkTab">#3590C9</color>
+
+    <color name="air">#6AC6FF</color>
+    <color name="noise">#4EE1BE</color>
+    <color name="green">#00CA14</color>
+    <color name="rad">#C139F1</color>
+
+    <color name="gray_indicator">#C4C4C4</color>
+
+    <color name="indicator_green1">#c8ed11</color>
+    <color name="indicator_green2">#9ed20e</color>
+    <color name="indicator_green3">#74b60a</color>
+    <color name="indicator_green4">#1b7b00</color>
+    <color name="indicator_green5">#4a9a05</color>
+
+    <color name="indicator_radiation7">#0050D2</color>
+    <color name="indicator_radiation6">#0068AC</color>
+    <color name="indicator_radiation5">#0094A7</color>
+    <color name="indicator_radiation4">#00AC86</color>
+    <color name="indicator_radiation3">#1AE958</color>
+    <color name="indicator_radiation2">#46FF5E</color>
+    <color name="indicator_radiation1">#00C563</color>
+
+    <color name="indicator_airDay5">#FF6305</color>
+    <color name="indicator_airDay4">#FF8119</color>
+    <color name="indicator_airDay3">#FF9F2D</color>
+    <color name="indicator_airDay2">#FFB93E</color>
+    <color name="indicator_airDay1">#FFD550</color>
+
+    <color name="indicator_airNight6">#FFEF62</color>
+    <color name="indicator_airNight5">#FBF382</color>
+    <color name="indicator_airNight4">#F8F598</color>
+    <color name="indicator_airNight3">#F4F8B5</color>
+    <color name="indicator_airNight2">#F0FBD3</color>
+    <color name="indicator_airNight1">#ECFEEF</color>
+</resources>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="-50dp"
+            android:layout_marginTop="-50dp"
+            android:background="@drawable/circle_background_article"/>
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/layout_blog">
+
+                <com.google.android.material.appbar.AppBarLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent">
+
+                        <TextView
+                            android:id="@+id/blogTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            android:layout_margin="16dp"
+                            android:text="@string/blogTitle"
+                            android:layout_gravity="end"
+                            android:gravity="end"
+                            android:textStyle="bold"
+                            android:textSize="32sp"
+                            android:textColor="@color/black"
+                            app:layout_scrollFlags="scroll|exitUntilCollapsed"/>
+                </com.google.android.material.appbar.AppBarLayout>
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvBlog"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    tools:listitem="@layout/rv_blog_article1"
+                    android:scrollbars="vertical"
+                    android:overScrollMode="never"
+                    app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"/>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+
+                    android:weightSum="2">
+                        <ImageView
+                            android:id="@+id/backHome_blog"
+                            android:layout_width="56dp"
+                            android:layout_height="56dp"
+                            android:translationY="28dp"
+
+                            app:layout_constraintBottom_toTopOf="@id/tabBar"
+                           app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            android:translationZ="1000dp"
+                            app:srcCompat="@drawable/ic_home"
+                            android:elevation="30dp"/>
+
+                        <LinearLayout
+                            android:id="@+id/tabBar"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/tab_bar"
+                            android:orientation="horizontal"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            android:elevation="30dp">
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:layout_weight="1"
+                                    android:layout_marginVertical="8dp">
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical"
+                                            android:id="@+id/blog_main"
+                                            app:layout_constraintTop_toTopOf="parent"
+                                            app:layout_constraintBottom_toBottomOf="parent"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            android:layout_marginStart="90dp"
+                                            >
+
+
+                                                <ImageView
+
+                                                    android:id="@+id/imageBlog_tab"
+                                                    android:layout_width="24dp"
+                                                    android:layout_height="24dp"
+                                                    android:layout_gravity="center"
+                                                    app:srcCompat="@drawable/ic_blog"
+                                                    />
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+
+                                                    android:id="@+id/textBlog_tab"
+                                                    android:text="@string/blog"
+                                                    android:clickable="true"
+                                                    android:layout_gravity="center"
+                                                    style="@style/main"/>
+                                        </LinearLayout>
+
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:layout_weight="1"
+                                    android:layout_marginVertical="8dp"
+                                    android:id="@+id/favorite_tab">
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/favorite_main"
+                                            android:orientation="vertical"
+                                            app:layout_constraintTop_toTopOf="parent"
+                                            app:layout_constraintBottom_toBottomOf="parent"
+                                            app:layout_constraintEnd_toEndOf="parent"
+                                            android:layout_marginEnd="80dp"
+                                            >
+
+                                                <ImageView
+                                                    android:id="@+id/imageView2"
+                                                    android:layout_width="24dp"
+                                                    android:layout_height="24dp"
+                                                    android:layout_gravity="center"
+                                                    app:srcCompat="@drawable/ic_favorite"/>
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="@string/favorite"
+                                                    android:clickable="true"
+                                                    android:layout_gravity="center"
+                                                    style="@style/main"/>
+                                        </LinearLayout>
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+                        </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</RelativeLayout>

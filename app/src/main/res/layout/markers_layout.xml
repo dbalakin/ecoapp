@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   android:layout_width="200dp"
+                                                   android:layout_height="80dp"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/markers_img"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:src="@color/red"
+            android:layout_marginStart="10dp"/>
+
+    <TextView
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            app:layout_constraintLeft_toRightOf="@id/markers_img"
+            app:layout_constraintTop_toTopOf="@id/markers_img"
+            app:layout_constraintBottom_toBottomOf="@id/markers_img"
+            android:textAlignment="center"
+            android:gravity="left|center"
+            android:text="25.10.1917 - 26.10-1927"
+            android:layout_marginStart="10dp"
+            android:id="@+id/markers_content"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

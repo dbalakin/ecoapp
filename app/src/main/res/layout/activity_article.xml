@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/articlePhoto_articleBlog"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-50dp"
+        android:layout_marginTop="-50dp"
+        android:background="@drawable/circle_background_article"/>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollView_blogArticle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:scrollbars="none"
+        android:overScrollMode="never">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardArticle_blog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            app:cardBackgroundColor="@color/white_transparent_second"
+            app:cardCornerRadius="25dp"
+            android:translationZ="10dp"
+            app:cardUseCompatPadding="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white_transparent_second"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:id="@+id/clickableItem_blogArticle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:clickable="true"
+                    android:background="?attr/selectableItemBackground">
+
+                    <ImageView
+                        android:id="@+id/articleArrow_blogArticle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_above="@id/articleDate_blogArticle"
+                        app:srcCompat="@drawable/ic_left_arrow"/>
+
+                    <TextView
+                        android:id="@+id/articleTitle_blogArticle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_toEndOf="@id/articleArrow_blogArticle"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:textSize="28sp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:gravity="end"
+                        tools:text="Свопы растений в Москве"/>
+
+                    <TextView
+                        android:id="@+id/articleDate_blogArticle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentStart="true"
+                        android:gravity="end"
+                        android:layout_below="@id/articleTitle_blogArticle"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginStart="16dp"
+                        android:textSize="20sp"
+                        android:background="@android:color/transparent"
+                        tools:text="20.09.2020"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/articleDescription_blogArticle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    tools:text="Описание"
+                    android:background="@android:color/transparent" />
+
+                <TextView
+                    android:id="@+id/articleAuthor_blogArticle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:layout_margin="16dp"
+                    android:textSize="20sp"
+                    tools:text="Автор: Мария Марьевна"
+                    android:background="@android:color/transparent" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>
